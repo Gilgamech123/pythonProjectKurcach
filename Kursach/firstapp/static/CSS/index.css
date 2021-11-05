@@ -1,0 +1,20 @@
+x.features{
+height: 500px;
+width:100%;
+background: yellow;
+color:#fff;
+padding-top: 100px;
+text-align: center;
+background-image: url(https://pbs.twimg.com/profile_banners/42141249/1466420504/1500x500);
+background-size: 100% 100%;
+background-repeat: no-repeat;
+background-position: center;
+}
+h1{
+color:Green;
+margin-button:50px;
+}
+.text{
+font-size:30px;
+color:#FF4500;
+}

@@ -1,0 +1,26 @@
+{% block content %}
+
+
+    <div class="col-8 col-sm-8 col-md-4 col-lg-4 col-xl-4 info">
+      <table class="ret">
+        <tr class="success">
+            <td width="200px"><font color="Black">Фамилия: {{info.surname}} </font></td>
+        </tr>
+        <tr class="success">
+            <td width="200px"><font color="Black">Имя: {{info.name}}</font></td>
+        </tr>
+        <tr class="success">
+            <td width="200px"><font color="Black">Отчество: {{info.patronymic}}</font></td>
+        </tr>
+          <tr class="success">
+            <td width="200px"><font color="Black">Данные паспорта: {{task.passport_data}}</font></td>
+        </tr>
+          <tr class="success">
+            <td width="200px"><font color="Black">Данные снилса: {{task.snills}}</font></td>
+        </tr>
+
+
+    </table>
+    </div>
+
+{% endblock %}

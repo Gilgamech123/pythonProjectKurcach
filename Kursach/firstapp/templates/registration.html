@@ -1,0 +1,70 @@
+{% extends 'layout.html'%}
+
+{% block content%}
+ <div class="form-wrap">
+  <div class="profile"><img   src="http://cdn.onlinewebfonts.com/svg/download_243840.png" width="100" height="111">
+    <h1>Регистрация <br>
+    &#10148;</h1>
+  </div>
+  <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      {{ form2.as_p }}
+    <!--<div>
+      <label for="name">Имя</label>
+      <input type="text" name="name" required>
+    </div>
+     <div>
+      <label for="surname">Фамилия</label>
+      <input type="text" name="surname" required>
+    </div>
+      <div>
+      <label for="patronymic">Отчество</label>
+      <input type="text" name="patronymic" required>
+    </div>
+    <div>
+      <label for="login">Login</label>
+      <input type="text" name="login" required>
+    </div>
+    <div>
+    <label for="psw">Password</label>
+    <input type="password"  name="password" required>
+    </div>
+    <div>
+    <label for="psw-repeat">Repeat Password</label>
+    <input type="password"  name="repeat_password" required>
+    </div>
+    <p><label><input type="radio" name="user" value="None" aria-required="true" onChange="Selected(this)">Пользователь</label>
+<label><input  type="radio" name="user" value="Open" aria-required="true" onChange="Selected(this)">Работник</label></p>
+
+<div id='Block1' style='display: none;'>
+  <div>
+      <label for="pozition">Должность:</label>
+      <input type="text" name="name_pozition" required>
+  </div>
+</div>
+  <div id='Block2' style='display: none;'>
+  <div>
+      <label for="pasport_data">Введите номер и серию паспорта:</label>
+      <input type="number" size="12" name="numpasport" >
+      <label for="snils">Введите снилс:</label>
+      <input type="number" size="12" name="numsnils" >
+  </div>
+</div>-->
+    <button type="submit" name="registration">Выполнить</button>
+  </form>
+</div>
+<script>
+function Selected(a) {
+  var label = a.value;
+    if (label=="Open") {
+       document.getElementById("Block1").style.display='block';
+       document.getElementById("Block2").style.display='none';
+   } else {
+       document.getElementById("Block2").style.display='block';
+       document.getElementById("Block1").style.display='none';
+   }
+
+}
+</script>
+{% endblock %}

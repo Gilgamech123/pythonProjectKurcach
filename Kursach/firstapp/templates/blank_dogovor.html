@@ -1,0 +1,59 @@
+{% block content %}
+
+
+     <form method="post" action="">
+         {% csrf_token %}
+      <!--<div>
+      <label for="name">Имя</label>
+      <input class="inName" type="text" value="{{inf.name}}" name="name" required>
+    <p>{{info.surname}}</p>
+    </div>
+     <div>
+      <label for="surname">Фамилия</label>
+      <input class="inSurname" type="text" value="{{inf.surname}}" name="surname" required>
+    </div>
+      <div>
+      <label for="patronymic">Отчество</label>
+      <input class="inPatronymic" type="text" value="{{inf.patronymic}}" name="patronymic" required>
+    </div>
+    <div>
+      <label >Страховой агент:</label>
+      <select class="choose">
+          <option disabled>Выберите работника: </option>
+          {% for name in nameEmplyeer %}
+          <option name="name_user">{{name.user}}</option>
+          {% endfor %}
+      </select>
+    </div>
+        <div>
+              <label for="pasport_data">Введите номер и серию паспорта:</label>
+              <input class="DPasport" type="number"  value="{{task.passport_data}}" name="numpasport" >
+              <label for="snils">Введите снилс:</label>
+              <input class="DSnils" type="number" size="12" value="{{task.snills}}" name="numsnils" >
+        </div>
+      <label >Вид страхования:</label>
+      <select class="choose1">
+          <option disabled>Выберите вид</option>
+          {% for name in name_view  %}
+          <option name="name_view">{{name.Name_view}}</option>
+          {% endfor %}
+      </select>
+         <label >Сумма взноса:</label>
+      <select class="choose1">
+          <option disabled>Выберите сумму</option>
+          {% for name in name_view  %}
+          <option >{{name.percentage_of_insurance_premium}}</option>
+          {% endfor %}
+      </select>
+          <label for="sum_insurance">Введите суммы выплаты при наступлении страхового случая:</label>
+         <input class="DSnils" type="number" size="10000"  name="sumInsurance" >
+         <label for="сontract_time">Дата окончания договора:</label>
+         <input class="DSnils" type="text" size="10000"  name="сontractTime" >-->
+
+
+    <button type="submit">Оформить</button>
+
+
+    </form>
+
+{% endblock %}

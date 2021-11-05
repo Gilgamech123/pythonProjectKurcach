@@ -1,0 +1,33 @@
+.photoProfil{
+margin-top:5%;
+margin-left:10%;
+
+}
+.NameUser {
+  font-size: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.information {
+  font-size: 18px;
+}
+.info{
+margin-top:5%;
+}
+.documents{
+width: 100%;
+height: 50%;
+
+}
+th{
+bordercolor:Black;
+
+
+}
+.success1{
+background-color:pink;
+}
+.v123{
+margin-left:102%;
+margin-top:10%;
+}
