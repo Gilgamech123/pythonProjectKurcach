@@ -1,7 +1,39 @@
 {% extends 'layout.html'%}
 
 {% block content%}
-<h1>Hello</h1>
+<div class="container" >
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 photoProfil">
+      <img  src="https://akbcenter.by/assets/images/default-avatar.png" width="200" height="222">
+    </div>
+        {% for info in infoemployeer %}
+            {% for inf in information %}
+
+            {% include 'string_employeer.html' %}
+
+            {% endfor %}
+        {% endfor %}
+      <button onclick="window.location.href='registration.html'">Добавить клиента</button>
+    <div class="documents">
+        <table border="2" width="100%" cellpadding="5" rules="rows" >
+
+            <tr >
+                <th>Номер</th>
+                <th>Имя_Клиента</th>
+                <th>Вид_страхования</th>
+                <th>Сумма_Страхования</th>
+                <th>Дата заклбчения договора</th>
+                <th>Окончание договора</th>
+           </tr>
+            {% for serch in infoDogovorEmployeer%}
+
+                 {% include 'table_employeer.html' %}
+
+            {% endfor %}
+        </table>
+    </div>
+  </div>
+</div>
 
 
 {% endblock %}

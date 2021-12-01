@@ -31,3 +31,10 @@ background-color:pink;
 margin-left:102%;
 margin-top:10%;
 }
+tr.hidden td {
+  animation: hide 1s 1s forwards;
+}
+tr.hidden {
+  opacity: 0;
+  border-bottom: none;
+}

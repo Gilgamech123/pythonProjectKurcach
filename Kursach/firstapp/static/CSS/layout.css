@@ -23,20 +23,22 @@ ul {
 .navBar:hover {
   background:#D43737;/*добавляем эффект при наведении*/
 }
-li {
-  float:left; /*Размещаем список горизонтально для реализации меню*/
-}
+
 .firstBlock{
     margin-left:15%;
+    float:left;
 }
 .secondBlock{
     margin-left:15%;
+    float:left;
 }
 .thirdBlock{
     margin-left:15%;
+    float:left;
 }
 .forBlock{
     margin-left:15%;
+    float:left;
 }
 .loginPage{
 

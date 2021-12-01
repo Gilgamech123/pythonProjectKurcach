@@ -1,0 +1,27 @@
+{% extends 'layout.html'%}
+
+{% block content%}
+ <div class="container">
+     <h1>Измение свойств: </h1>
+     <form method="post" action="">
+         {% csrf_token %}
+        {% for info in info_application %}
+        {% if info.approved == True  %}
+         <div>
+             <label for="patronymic">Ответ: </label>
+             <input type="radio" name="rez" value="True" checked required> Одобрено
+             <input type="radio" name="rez"  value="False" required> Не одобрено
+         </div>
+         {%else%}
+          <div>
+             <label for="patronymic">Ответ: </label>
+             <input type="radio" name="rez" value="True"  required> Одобрено
+             <input type="radio" name="rez"  value="False" checked required> Не одобрено
+         </div>
+        {%endif%}
+        {% endfor %}
+        <a href="home_admin.html/{{info.user}}"><button type="submit" >Выполнить</button></a>
+
+     </form>
+ </div>
+{% endblock %}

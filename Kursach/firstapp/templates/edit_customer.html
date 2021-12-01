@@ -1,0 +1,60 @@
+{% extends 'layout.html'%}
+
+{% block content%}
+<div class="form-wrap">
+  <div class="profile"><img   src="http://cdn.onlinewebfonts.com/svg/download_243840.png" width="100" height="111">
+    <h1>Редактировать клиента: <br>
+    &#10148;</h1>
+  </div>
+  <form method="post">
+      {% csrf_token %}
+      {% for info in infoUser %}
+      {% for infoCust in infoCustomer %}
+      {%if info.id == infoCust.user_id %}
+      <div>
+        <label for="name">Имя</label>
+        <input type="text" name="name" value="{{info.name}}"  required>
+      </div>
+      <div>
+        <label for="surname">Фамилия</label>
+        <input type="text" name="surname" value="{{info.surname}}" required>
+      </div>
+      <div>
+        <label for="patronymic">Отчество</label>
+        <input type="text" name="patronymic" value="{{info.patronymic}}" required>
+      </div>
+      <div>
+          <label for="login">Login</label>
+          <input type="text" name="login" value="{{info.login}}" required>
+      </div>
+      <div>
+          <label for="psw">Password</label>
+          <input type="password" id="password-input"  name="password" value="{{info.password}}" required>
+          <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+      </div>
+      <div>
+          <label for="pasport_data">Введите номер и серию паспорта:</label>
+          <input type="number" size="12" value="{{infoCust.passport_data}}" name="numpasport" >
+          <label for="snils">Введите снилс:</label>
+          <input type="number" size="12" value="{{infoCust.snills}}" name="numsnils" >
+      </div>
+      {%endif%}
+        {%endfor%}
+      {%endfor%}
+    <button type="submit" name="registration">Выполнить</button>
+  </form>
+</div>
+<script>
+    function show_hide_password(target){
+	var input = document.getElementById('password-input');
+	if (input.getAttribute('type') == 'password') {
+		target.classList.add('view');
+		input.setAttribute('type', 'text');
+	} else {
+		target.classList.remove('view');
+		input.setAttribute('type', 'password');
+	}
+	return false;
+}
+</script>
+{% endblock %}

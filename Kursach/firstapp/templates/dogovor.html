@@ -3,9 +3,42 @@
 {% block content%}
  <div class="container">
      <h1>Формирование договора </h1>
-     <form method="post" action="">
+     <form method="post" >
         {% csrf_token %}
-        {{ form.as_p }}
+
+        {% for info in infoCustomer %}
+         <div>
+            <label for="name">Клиент:</label>
+
+            <input type="text" name="customer" value="{{info.user}}" required>
+
+        </div>
+
+         {% endfor %}
+         <div>
+            <label for="surname">Работник:</label>
+            <select name="employeer">
+            {% for index in employeer_list %}
+                <option value="{{index.user.name}}">{{index.user.name}}</option>
+            {% endfor %}
+            </select>
+        </div>
+        <div>
+            <label for="patronymic">Вид страхования:</label>
+            <select name="type_view">
+            {% for index in views_list %}
+                <option value="{{index.Name_view}}">{{index.Name_view}}</option>
+            {% endfor %}
+            </select>
+        </div>
+         <div>
+            <label for="name">Дата заключения договора:</label>
+            <input type="date" name="time">
+        </div>
+        <div>
+            <label for="login">Сумма выплаты:</label>
+            <input type="number" name="sum_insurance" required>
+        </div>
      <button type="submit">Оформить</button>
      </form>
  </div>

@@ -17,23 +17,27 @@
 
       <button onclick="window.location.href='dogovor.html'">Добавить договор</button>
     <div class="documents">
-     <table border="2" width="100%" cellpadding="5" rules="rows" >
-           <tr >
+     <table border="2" width="100%" cellpadding="5" rules="rows" id ="zen">
+         <tr >
                 <th>Номер</th>
                 <th>Имя_Агента</th>
                 <th>Вид_страхования</th>
                 <th>Сумма_Страхования</th>
+                <th>Дата заключения договора</th>
                 <th>Окончание договора{{ifnodogovor1}}</th>
            </tr>
-
+        <tbody>
          {% for infodoc in ifnodogovor %}
 
                  {% include 'table.html' %}
-
         {% endfor %}
 
         </table>
+
+
+
     </div>
   </div>
 </div>
+
   {% endblock %}

@@ -1,0 +1,56 @@
+{% extends 'layout.html'%}
+
+{% block content%}
+<div class="form-wrap">
+  <div class="profile"><img   src="http://cdn.onlinewebfonts.com/svg/download_243840.png" width="100" height="111">
+    <h1>Редактировать работника: <br>
+    &#10148;</h1>
+  </div>
+  <form method="post">
+      {% csrf_token %}
+      {% for info in infoUser %}
+
+        <div>
+            <label for="name">Имя</label>
+            <input type="text" name="name" value="{{info.name}}" required>
+        </div>
+        <div>
+            <label for="surname">Фамилия</label>
+            <input type="text" name="surname" value="{{info.surname}}" required>
+        </div>
+        <div>
+            <label for="patronymic">Отчество</label>
+            <input type="text" name="patronymic" value="{{info.patronymic}}" required>
+        </div>
+        <div>
+            <label for="login">Login</label>
+            <input type="text" name="login" value="{{info.login}}" required>
+        </div>
+        <div>
+            <label for="psw">Password</label>
+            <input type="password"  name="password" value="{{info.password}}" required>
+        </div>
+        <div>
+            <label for="position">Должность:</label>
+            <select name="position">
+                <option value="работник">pаботник</option>
+            </select>
+        </div>
+      {%endfor%}
+    <button type="submit" name="registration">Выполнить</button>
+  </form>
+</div>
+<script>
+    function show_hide_password(target){
+	var input = document.getElementById('password-input');
+	if (input.getAttribute('type') == 'password') {
+		target.classList.add('view');
+		input.setAttribute('type', 'text');
+	} else {
+		target.classList.remove('view');
+		input.setAttribute('type', 'password');
+	}
+	return false;
+}
+</script>
+{% endblock %}

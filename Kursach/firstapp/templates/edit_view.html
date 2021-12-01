@@ -1,0 +1,26 @@
+{% extends 'layout.html'%}
+
+{% block content%}
+ <div class="container">
+     <h1>Измение свойств: </h1>
+     <form method="post" action="">
+         {% csrf_token %}
+        {% for info in infoview %}
+         <div>
+             <label for="surname">Наименование вида: </label>
+             <input type="text" name="nameView" value="{{info.Name_view}}"  required>
+         </div>
+         <div>
+             <label for="surname">Сумма взноса: </label>
+             <input type="text" name="percentage_of_insurance_premium" value="{{info.percentage_of_insurance_premium}}"  required>
+         </div>
+         <div>
+             <label for="patronymic">Дата окончания: {{info.сontract_time|date:"d.m.Y"}}</label>
+             <input type="date" name="сontract_time" value="{{info.сontract_time}}" required>
+         </div>
+
+    {% endfor %}
+     <button type="submit">Выполнить</button>
+     </form>
+ </div>
+{% endblock %}

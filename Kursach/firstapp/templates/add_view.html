@@ -1,0 +1,22 @@
+{% extends 'layout.html'%}
+
+{% block content%}
+<div class="container">
+<form method="post">
+        {% csrf_token %}
+        <div>
+             <label for="surname">Наименование вида: </label>
+             <input type="text" name="nameView"   required>
+         </div>
+         <div>
+             <label for="surname">Сумма взноса: </label>
+             <input type="text" name="percentage_of_insurance_premium"   required>
+         </div>
+         <div>
+             <label for="patronymic">Дата окончания: </label>
+             <input type="text" name="сontract_time"  required>
+         </div>
+        <button type="submit" name="add_view" >Выполнить</button>
+  </form>
+</div>
+{% endblock %}

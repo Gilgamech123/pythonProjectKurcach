@@ -2,15 +2,189 @@
 {% extends 'layout.html'%}
 
 {% block content%}
+<!--<style>
+    .imageIndex{
+background-image: url(https://www.saraswatbank.com/images/Banner_354_40and42-Banner_354_insurance-main-page.jpg);
+height: 500px;
+ width: 63%;
+ margin-left: 100px;
+}
+</style>
     <div class="features"  >
 
     <h1><b>Страховая компания</b></h1>
-        <br>
-        <br>
-        <p class="text"><b>Приветвуем вас на нашем сайте!<br>
+        <div class="imageIndex" >
+            <p class="text"><b>Приветвуем вас на нашем сайте!<br>
         Мы предлагае вам простой способ застраховать свою жизнь</b></p>
+        </div>
+
         <button onclick="window.location.href='dogovor.html'" class="btn btn-warning">Оформить договор</button>
 
     </div>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+     Custom styles for this template
+    <link href="/css/examples/carousel.css" rel="stylesheet"></head>
+<body>
+-->
+<h1 xmlns="http://www.w3.org/1999/html"><font size="15px">Страховая компания</font></h1>
+<div class="body">
+<div class="slider">
+  <input type="radio" name="switch" id="btn1" checked>
+  <input type="radio" name="switch" id="btn2">
+  <input type="radio" name="switch" id="btn3">
+
+  <div class="switch">
+    <label for="btn1"></label>
+    <label for="btn2"></label>
+    <label for="btn3"></label>
+  </div>
+
+  <div class="slider-inner">
+
+    <div class="slides">
+      <img src="https://im0-tub-ru.yandex.net/i?id=b4c8b42b2fd617506043de663f124666-l&n=13"/>
+      <img src="https://avatars.mds.yandex.net/i?id=9c6ca32b491f51113736419247434d69-4884345-images-thumbs&n=13"/>
+      <img src="https://geneseeins.com/wp-content/uploads/2018/01/4-Top-Traits-of-Quality-Insurance-Agents-e1516049289502.jpg"/>
+    </div>
+  </div>
+</div>
+</div>
+<h1><font size="15px">Тут всем рады</font></h1>
+ <div class="container marketing">
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="http://www.ostrovets.by/upload/medialibrary/9c2/IMG_1980.jpg" width="140" height="140">
+          <h2>Иванченко О.В.</h2>
+          <p>Сотрудник компании. Поможет вым выгодно заключить страховой доовор</p>
+          <p>Опыт работы с клиентами: 12 лет</p>
+          <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
+      </div>
+      <div class="col-lg-4">
+        <img src="https://app.onperspektiva24.com/storage/source/1/0w8bxUWhR1MRaz-I_zU5428RfsPMnp52.jpg" width="140" height="140">
+        <h2>Сидоров И.О.</h2>
+        <p>Сотрудник компании. Поможет вым выгодно заключить страховой доовор</p>
+        <p>Опыт работы с клиентами: 5 лет</p>
+        <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
+      </div>
+      <div class="col-lg-4">
+         <img src="https://app.onperspektiva24.com/storage/source/1/IDRE7OuErmRZbw7bUYNwMDHoTXdT_I2U.jpg" width="140" height="140">
+        <h2>Иванов И.И.</h2>
+        <p>Сотрудник компании. Поможет вым выгодно заключить страховой доовор</p>
+        <p>Опыт работы с клиентами: 8 лет</p>
+        <p><a class="btn btn-secondary" href="#" role="button">Подробнее &raquo;</a></p>
+      </div>
+    </div>
+
+
+ </div>
+<h1><font size="15px">Виды Услуг:</font></h1>
+<div class="Wies">
+
+      <ol class="not"  type="square">
+         {% for serch in views_list%}
+        <li><font color="white" size="6px">{{serch.Name_view}}</font></li>
+        <br>
+        {% endfor %}
+      </ol>
+
+</div>
+<style>
+.Wies{
+padding-left: 44%;
+padding-top: 3%;
+padding-bottom: 3%;
+background-color: #738290;
+
+}
+li{
+list-style-type: none;
+}
+.container{
+padding-top: 3%;
+}
+h1{
+text-align: center;
+size:10px;
+}
+.body{
+background-color: #738290;
+}
+.slider {
+  position: relative;
+  width: 680px;
+  margin: 50px auto;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+.slider input[name="switch"] {
+  display: none;
+}
+.switch {
+  margin-button: -50px;
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  text-align: center;
+  width: 100%;
+}
+.switch label {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  margin: 0 3px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+  border-radius: 50%;
+  border: 5px solid #2f363c;
+  background-color: #738290;
+}
+#btn1:checked~.switch label[for="btn1"] {
+  background-color: white;
+}
+#btn2:checked~.switch label[for="btn2"] {
+  background-color: white;
+}
+#btn3:checked~.switch label[for="btn3"] {
+  background-color: white;
+}
+.slider-inner {
+  overflow: hidden;
+}
+.slides {
+  width: 300%;
+  transition: all 0.5s;
+}
+.slides img {
+  width: 680px;
+  height: 340px;
+  float: left;
+}
+#btn1:checked~slider-inner slides {
+  transform: translate(0);
+}
+#btn2:checked~.slider-inner .slides {
+  transform: translate(-680px);
+}
+#btn3:checked~.slider-inner .slides {
+  transform: translate(-1360px);
+}
+</style>
+
+
 
 {% endblock %}

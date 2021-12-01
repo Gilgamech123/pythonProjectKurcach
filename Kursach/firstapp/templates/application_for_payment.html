@@ -1,0 +1,26 @@
+{% extends 'layout.html'%}
+{% block content %}
+<div class="container">
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    {% for info in rezult_info %}
+        <div>
+            <label for="name">Номер договора: </label>
+            <input type="text" name="dogovor" value="{{info.id}}" required>
+        </div>
+     {% endfor %}
+        <div>
+            <label for="name">Заключение врача:</label>
+            <input type="file" name="doctor_opinion"  required>
+        </div>
+        <div>
+            <label for="name">Заявление клиента:</label>
+            <textarea rows="10" cols="45" name="customer_request"> </textarea>
+        </div>
+
+      <button type="submit">Оформить</button>
+</form>
+</div>
+{% endblock %}
+
