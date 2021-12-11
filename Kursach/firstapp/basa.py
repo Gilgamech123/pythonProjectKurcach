@@ -1,5 +1,5 @@
 from .models import *
-
+import datetime
 
 def get_material(user_id):
     materials = Customer.objects.filter(user=user_id)
@@ -153,13 +153,13 @@ def edit_user(id, name, surname, patronymic, login, password):
     edit_user.save()
 
 def edit_customer(id, passport_data, snills):
-    edit_customer = Customer.objects.get(id=id)
+    edit_customer = Customer.objects.get(user=id)
     edit_customer.snills = snills
     edit_customer.passport_data = passport_data
     edit_customer.save()
 
 def edit_employeer(id, position):
-    edit_employeer = Employeer.objects.get(id=id)
+    edit_employeer = Employeer.objects.get(user=id)
     edit_employeer.position = position
     edit_employeer.save()
 
@@ -171,3 +171,7 @@ def edit_application(id, nameView):
 def open_info(id):
     rez = ApplicationForPayment.objects.filter(id=id)
     return rez
+
+def getdata():
+    data = datetime.datetime.now()
+    return data

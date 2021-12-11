@@ -1,55 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="895726e4-30e9-493b-ac8f-4046b988d401" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/migrations/0004_applicationforpayment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/migrations/0005_auto_20211108_0959.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/migrations/0006_admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/migrations/0007_auto_20211116_1026.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/static/CSS/home_admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/add_view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/application_for_payment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/delete_dogovor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/edit_application.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/edit_customer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/edit_employeer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/edit_view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/home_admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/payment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/registration_employeer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/string_admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/string_employeer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/table_employeer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos/2021/11/06/3KFfSevZy9E.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos/2021/11/09/3KFfSevZy9E.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos/2021/11/09/3KFfSevZy9E_sFJ9NEi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos/2021/11/09/3KFfSevZy9E_wdBWS8Z.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos/2021/11/13/Главное_меню.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos/2021/11/16/3KFfSevZy9E.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos/2021/11/16/3KFfSevZy9E_148h7QI.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos/2021/11/16/3KFfSevZy9E_FfxUsSX.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos/2021/11/16/3KFfSevZy9E_IChmM2w.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos/2021/11/17/3KFfSevZy9E.jpg" afterDir="false" />
+    <list default="true" id="895726e4-30e9-493b-ac8f-4046b988d401" name="Changes" comment="EndProject">
+      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/migrations/0008_alter_dogovor_sum_insurance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/migrations/0009_alter_payment_sum_pay.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/migrations/0010_alter_typeofinsurance_percentage_of_insurance_premium.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/delete_dogovor1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/delete_dogovor2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/delete_dogovor3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/delete_dogovor4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/delete_dogovor5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/delete_dogovor6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kursach/photos/2021/12/11/3KFfSevZy9E.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kursach/photos/2021/12/11/3KFfSevZy9E_jBLW2j0.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/Kursach/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/Kursach/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kursach/Kursach/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/Kursach/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kursach/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kursach/firstapp/basa.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/basa.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kursach/firstapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/static/CSS/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/static/CSS/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/static/CSS/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/static/CSS/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/static/CSS/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/static/CSS/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/static/CSS/registration.css" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/static/CSS/registration.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/dogovor.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/dogovor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/home_employeer.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/home_employeer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/add_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/add_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/home_admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/home_admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/string.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/string.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/table.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/table_employeer.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/table_employeer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kursach/firstapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,6 +88,14 @@
       <option name="presentableId" value="Default" />
       <updated>1635685304154</updated>
     </task>
+    <task id="LOCAL-00001" summary="EndProject">
+      <created>1638354921021</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638354921021</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,6 +112,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="EndProject" />
+    <option name="LAST_COMMIT_MESSAGE" value="EndProject" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

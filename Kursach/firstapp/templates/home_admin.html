@@ -59,6 +59,7 @@
                 <th>{{serch.сontract_time|date:"d.m.Y"}}</th>
                 <th>{{serch.percentage_of_insurance_premium}}</th>
                 <th><button onclick="window.location.href='edit_view.html/{{serch.id}}'">Изменить</button></th>
+                <th><a  href="delete_dogovor2.html/{{serch.id}}"><button >Удалить</button></a>
             </tr>
             {% endfor %}
         </table>
@@ -92,6 +93,7 @@
                 <th>{{serchCustomer.passport_data}}</th>
                 <th>{{serchCustomer.snills}}</th>
                 <th><button onclick="window.location.href='edit_customer.html/{{serch.id}}'">Изменить</button></th>
+                <th><a  href="delete_dogovor4.html/{{serchCustomer.id}}"><button >Удалить</button></a>
             </tr>
              {% endif %}
             {% endfor %}
@@ -124,6 +126,7 @@
                 <th>{{serch.password}}</th>
                 <th>{{serchEmployeer.position}}</th>
                 <th><button onclick="window.location.href='edit_employeer.html/{{serch.id}}'">Изменить</button></th>
+                <th><a  href="delete_dogovor3.html/{{serchEmployeer.id}}"><button >Удалить</button></a>
             </tr>
              {% endif %}
             {% endfor %}
@@ -146,6 +149,24 @@
                 <th>{{serch.customer_request}}</th>
                 <th>{{serch.approved}}</th>
                 <th><button onclick="window.location.href='edit_application.html/{{serch.id}}'">Изменить</button></th>
+                <th><a  href="delete_dogovor5.html/{{serch.id}}"><button >Удалить</button></a>
+            </tr>
+             {% endfor %}
+        </table>
+        <h2>Выплата: </h2>
+         <table border="2" width="100%" cellpadding="5" rules="rows" >
+            <tr >
+                <th>Номер</th>
+                <th>Сумма</th>
+                <th>Номер счета</th>
+
+           </tr>
+            {% for serch in payment_list%}
+            <tr>
+                <th>{{serch.applicationForPayment_id}}</th>
+                <th>{{serch.sum_pay}}</th>
+                <th>{{serch.transfer_account}}</th>
+                <th><a  href="delete_dogovor6.html/{{serch.id}}"><button >Удалить</button></a>
             </tr>
              {% endfor %}
         </table>

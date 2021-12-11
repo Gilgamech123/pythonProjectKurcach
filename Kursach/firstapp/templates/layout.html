@@ -40,7 +40,7 @@
             <li class ="firstBlock" ><a class="navBar" href="https://api.whatsapp.com/send/?phone=79008007160">&#9990; +79008007160</a></li>
             <li class ="secondBlock"><a class="navBar" href="mailto:saulich@gmail.com"> &#128386; saulich@gmail.com</a> </li>
             <li class ="thirdBlock"><a class="navBar" href="login.html">Вход</a></li>
-            <li class ="forBlock"><a class="navBar" href="#">Дата</a> </li>
+            <li class ="forBlock"><a class="navBar" href="#"><p id="current_date_time_block"></p></a> </li>
         </ul>
 
     </div>
@@ -50,5 +50,34 @@
         {% endblock %}
     </main>
 
+
+<script type="text/javascript">
+
+    /* функция добавления ведущих нулей */
+    /* (если число меньше десяти, перед числом добавляем ноль) */
+    function zero_first_format(value)
+    {
+        if (value < 10)
+        {
+            value='0'+value;
+        }
+        return value;
+    }
+
+    /* функция получения текущей даты и времени */
+    function date_time()
+    {
+        var current_datetime = new Date();
+        var day = zero_first_format(current_datetime.getDate());
+        var month = zero_first_format(current_datetime.getMonth()+1);
+        var year = current_datetime.getFullYear();
+
+
+        return day+"."+month+"."+year+" ";
+    }
+
+    /* выводим текущую дату и время на сайт в блок с id "current_date_time_block" */
+    document.getElementById('current_date_time_block').innerHTML = date_time();
+</script>
 </body>
 </html>

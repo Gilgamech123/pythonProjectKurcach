@@ -1,0 +1,9 @@
+{% block content%}
+ <div class="container">
+     <h1>Измение свойств: </h1>
+     <form method="post" action="">
+         {% csrf_token %}
+     <button type="submit">Удалить</button>
+     </form>
+ </div>
+{% endblock %}

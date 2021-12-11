@@ -33,7 +33,7 @@ class Admin(models.Model):
 class TypeOfInsurance(models.Model):
     сontract_time = models.DateTimeField()
     Name_view = models.CharField(max_length=150)
-    percentage_of_insurance_premium = models.DecimalField(max_digits=20, decimal_places=3)
+    percentage_of_insurance_premium = models.DecimalField(max_digits=20, decimal_places=2)
 
     def __str__(self):
         return self.Name_view
@@ -43,7 +43,7 @@ class Dogovor(models.Model):
     employeer = models.ForeignKey(Employeer, on_delete=models.CASCADE)
     type_view = models.ForeignKey(TypeOfInsurance, on_delete=models.CASCADE)
     time = models.DateField(default=timezone.now)
-    sum_insurance = models.DecimalField(max_digits=20, decimal_places=3)
+    sum_insurance = models.DecimalField(max_digits=20, decimal_places=2)
 
 class ApplicationForPayment(models.Model):
     dogovor = models.ForeignKey(Dogovor, on_delete=models.CASCADE, verbose_name="Номер договора")
@@ -53,5 +53,5 @@ class ApplicationForPayment(models.Model):
 
 class Payment(models.Model):
     applicationForPayment = models.ForeignKey(ApplicationForPayment, on_delete=models.CASCADE, verbose_name="Номер заявки")
-    sum_pay = models.DecimalField(max_digits=20, decimal_places=3)
+    sum_pay = models.DecimalField(max_digits=20, decimal_places=2)
     transfer_account  = models.CharField(max_length=150)

@@ -63,7 +63,7 @@ class PageDogovor(View):
             sum_insurance = request.POST.get("sum_insurance")
             add_dogovor(customer, employeer, type_view, time, sum_insurance)
         context = {}
-        return render(request, 'home.html', context=context)
+        return HttpResponseRedirect("../home.html")
 
 
 class PageHome(View):
@@ -137,7 +137,7 @@ class PageApplicationPayment(View):
             customer_request = request.POST.get("customer_request")
             add_aplication(dogovor, doctor_opinion,customer_request)
         context = {}
-        return render(request, '../home.html', context=context)
+        return HttpResponseRedirect("../home.html")
 
 class PagePayment(View):
     def get(self, request,id):
@@ -156,7 +156,7 @@ class PagePayment(View):
             bank_details = request.POST.get("bank_details")
             add_paymant(id, sum_pay, bank_details)
         context = {}
-        return render(request, '../home.html', context=context)
+        return HttpResponseRedirect("../home.html")
 
 class PageHomeAdmin(View):
     def get(self, request):
@@ -169,6 +169,7 @@ class PageHomeAdmin(View):
             customers_list = Customer.objects.all()
             employeer_list = Employeer.objects.all()
             aplications_list = ApplicationForPayment.objects.all()
+            payment_list = Payment.objects.all()
 
             context = {
                 'information': information,
@@ -178,7 +179,8 @@ class PageHomeAdmin(View):
                 'users_list': users_list,
                 'customers_list': customers_list,
                 'employeer_list': employeer_list,
-                'aplications_list': aplications_list
+                'aplications_list': aplications_list,
+                'payment_list': payment_list
                 #'infoDogovorEmployeer': infoDogovorEmployeer
             }
         return render(request, 'home_admin.html', context=context)
@@ -188,7 +190,7 @@ class PageRegistrationEmployeer(View):
         context = {}
         return render(request, 'registration_employeer.html', context=context)
     def post(self, request):
-        if request.method == 'POST' :
+        if request.method == 'POST':
             name = request.POST.get("name")
             surname = request.POST.get("surname")
             patronymic = request.POST.get("patronymic")
@@ -198,7 +200,7 @@ class PageRegistrationEmployeer(View):
             add_user(name,surname, patronymic, login, password)
             add_employeer(name_position)
         context = {}
-        return render(request, 'login.html', context=context)
+        return HttpResponseRedirect("../home_admin.html")
 
 class EditViewPage(View):
     def get(self, request, id):
@@ -305,3 +307,39 @@ class DeleteDogovor(View):
         delete = Dogovor.objects.get(id=id)
         delete.delete()
         return HttpResponseRedirect("../home.html")
+
+class DeleteDogovor1(View):
+    def get(self, request, id):
+        delete = Dogovor.objects.get(id=id)
+        delete.delete()
+        return HttpResponseRedirect("../home_employeer.html")
+
+class DeleteDogovor2(View):
+    def get(self, request, id):
+        delete = TypeOfInsurance.objects.get(id=id)
+        delete.delete()
+        return HttpResponseRedirect("../home_admin.html")
+
+class DeleteDogovor3(View):
+    def get(self, request, id):
+        delete = Employeer.objects.get(id=id)
+        delete.delete()
+        return HttpResponseRedirect("../home_admin.html")
+
+class DeleteDogovor4(View):
+    def get(self, request, id):
+        delete = Customer.objects.get(id=id)
+        delete.delete()
+        return HttpResponseRedirect("../home_admin.html")
+
+class DeleteDogovor5(View):
+    def get(self, request, id):
+        delete = ApplicationForPayment.objects.get(id=id)
+        delete.delete()
+        return HttpResponseRedirect("../home_admin.html")
+
+class DeleteDogovor6(View):
+    def get(self, request, id):
+        delete = Payment.objects.get(id=id)
+        delete.delete()
+        return HttpResponseRedirect("../home_admin.html")

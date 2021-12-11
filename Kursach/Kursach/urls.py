@@ -22,6 +22,12 @@ urlpatterns = [
     path('edit_application.html/<int:id>', EditApplication.as_view()),
     path('add_view.html', AddView.as_view()),
     path('delete_dogovor.html/<int:id>', DeleteDogovor.as_view()),
+    path('delete_dogovor1.html/<int:id>', DeleteDogovor1.as_view()),
+    path('delete_dogovor2.html/<int:id>', DeleteDogovor2.as_view()),
+    path('delete_dogovor3.html/<int:id>', DeleteDogovor3.as_view()),
+    path('delete_dogovor4.html/<int:id>', DeleteDogovor4.as_view()),
+    path('delete_dogovor5.html/<int:id>', DeleteDogovor5.as_view()),
+    path('delete_dogovor6.html/<int:id>', DeleteDogovor6.as_view()),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
