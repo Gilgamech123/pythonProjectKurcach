@@ -6,7 +6,7 @@
     <h1>Редактировать клиента: <br>
     &#10148;</h1>
   </div>
-  <form method="post">
+  <form method="post" enctype="multipart/form-data">
       {% csrf_token %}
       {% for info in infoUser %}
       {% for infoCust in infoCustomer %}
@@ -38,6 +38,7 @@
           <label for="snils">Введите снилс:</label>
           <input type="number" size="12" value="{{infoCust.snills}}" name="numsnils" >
       </div>
+
       {%endif%}
         {%endfor%}
       {%endfor%}

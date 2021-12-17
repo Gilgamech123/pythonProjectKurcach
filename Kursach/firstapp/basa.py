@@ -76,8 +76,8 @@ def check_apporoved_true(application_id, rez):
     return anser
 
 
-def add_user(name,surname, patronymic, login, password):
-    add_User = User(name = name,surname = surname, patronymic = patronymic , login = login, password = password)
+def add_user(name,surname, patronymic, login, password,photo_profile):
+    add_User = User(name=name,surname=surname, patronymic=patronymic,login=login, password=password, photo_profile=photo_profile)
     add_User.save()
 
 def add_customer(passport_data, snills):
@@ -113,7 +113,7 @@ def check_payment(id):
 
 def add_paymant(id, sum_pay, bank_details):
     add_basa = Payment(sum_pay = sum_pay, transfer_account = bank_details)
-    add_basa.applicationForPayment = ApplicationForPayment.objects.order_by('id').get(id = id)
+    add_basa.applicationForPayment = ApplicationForPayment.objects.order_by('id').get(dogovor_id = id)
     add_basa.save()
 
 def add_aplication(dogovor, doctor_opinion,customer_request):
@@ -150,6 +150,7 @@ def edit_user(id, name, surname, patronymic, login, password):
     edit_user.patronymic = patronymic
     edit_user.login = login
     edit_user.password = password
+
     edit_user.save()
 
 def edit_customer(id, passport_data, snills):
@@ -175,3 +176,9 @@ def open_info(id):
 def getdata():
     data = datetime.datetime.now()
     return data
+
+def changePhoto_user(id_user,photo_profile):
+    edit_user = User.objects.get(id=id_user)
+
+    edit_user.photo_profile = photo_profile
+    edit_user.save()

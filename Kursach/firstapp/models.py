@@ -7,6 +7,7 @@ class User(models.Model):
     name = models.CharField(max_length=50)
     surname = models.CharField(max_length=50)
     patronymic = models.CharField(max_length=50)
+    photo_profile = models.ImageField(upload_to="photos_profile/%Y/%m/%d", verbose_name="Фото профиля")
 
     def __str__(self):
         return self.name

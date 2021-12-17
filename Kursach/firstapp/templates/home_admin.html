@@ -4,7 +4,9 @@
 <div class="container" >
   <div class="row">
     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 photoProfil">
-      <img  src="https://akbcenter.by/assets/images/default-avatar.png" width="200" height="222">
+      {% for inf in information %}
+            <img src="{{inf.photo_profile}}" width="200" height="222" >
+        {% endfor %}
     </div>
         {% for info in infoadmin %}
             {% for inf in information %}
@@ -13,95 +15,112 @@
 
             {% endfor %}
         {% endfor %}
+       <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <label >Фото профиля:</label>
+                <input type="file" name="photo_profile"  required>
+                <button type="submit" STYLE="margin-top:-35px; margin-left:350px;">Выполнить</button>
+            </form>
       <button onclick="window.location.href='registration_employeer.html'">Добавить работника</button>
     <div class="documents">
         <br>
-        <h2>Все договора:</h2>
-        <table border="2" width="100%" cellpadding="5" rules="rows" >
-
-            <tr >
-                <th>Номер</th>
-                <th>Имя_Клиента</th>
-                <th>Имя_Работника</th>
-                <th>Вид_страхования</th>
-                <th>Сумма_Страхования</th>
-                <th>Дата заключения договора</th>
-                <th>Окончание договора</th>
-           </tr>
-            {% for serch in dogovors_list%}
-            <tr>
-                <th>{{serch.id}}</th>
-                <th>{{serch.customer}}</th>
-                <th>{{serch.employeer}}</th>
-                <th>{{serch.type_view}}</th>
-                <th>{{serch.sum_insurance}}</th>
-                <th>{{serch.time|date:"d.m.Y"}}</th>
-                <th>{{serch.type_view.сontract_time|date:"d.m.Y"}}</th>
-            </tr>
-
-            {% endfor %}
-        </table>
+        <div class="block">
+            <h2 class="extremum-click">Все договора:</h2>
+            <div class="extremum-slide">
+            <table border="2" width="100%" cellpadding="5" rules="rows" >
+                <tr >
+                    <th>Номер</th>
+                    <th>Имя_Клиента</th>
+                    <th>Имя_Работника</th>
+                    <th>Вид_страхования</th>
+                    <th>Сумма_Страхования</th>
+                    <th>Дата заключения договора</th>
+                    <th>Окончание договора</th>
+                </tr>
+                {% for serch in dogovors_list%}
+                    <tr>
+                        <th>{{serch.id}}</th>
+                        <th>{{serch.customer}}</th>
+                        <th>{{serch.employeer}}</th>
+                        <th>{{serch.type_view}}</th>
+                        <th>{{serch.sum_insurance}}</th>
+                        <th>{{serch.time|date:"d.m.Y"}}</th>
+                        <th>{{serch.type_view.сontract_time|date:"d.m.Y"}}</th>
+                    </tr>
+                {% endfor %}
+            </table>
+            </div>
+        </div>
         <br>
-        <h2>Виды страховых случаев: </h2>
-         <table border="2" width="100%" cellpadding="5" rules="rows" >
+        <div class="block">
+        <h2 class="extremum-click">Виды страховых случаев: </h2>
+            <div class="extremum-slide">
+            <table border="2" width="100%" cellpadding="5" rules="rows" >
+                <tr>
+                    <th>Номер</th>
+                    <th>Наименование</th>
+                    <th>Дата_Окончание</th>
+                    <th>Страховой_Взнос</th>
 
-            <tr >
-                <th>Номер</th>
-                <th>Наименование</th>
-                <th>Дата_Окончание</th>
-                <th>Страховой_Взнос</th>
-
-           </tr>
-            {% for serch in views_list%}
-            <tr>
-                <th>{{serch.id}}</th>
-                <th>{{serch.Name_view}}</th>
-                <th>{{serch.сontract_time|date:"d.m.Y"}}</th>
-                <th>{{serch.percentage_of_insurance_premium}}</th>
-                <th><button onclick="window.location.href='edit_view.html/{{serch.id}}'">Изменить</button></th>
-                <th><a  href="delete_dogovor2.html/{{serch.id}}"><button >Удалить</button></a>
-            </tr>
-            {% endfor %}
-        </table>
-        <button onclick="window.location.href='add_view.html'">Добавить вид</button>
+                </tr>
+                {% for serch in views_list%}
+                    <tr>
+                        <th>{{serch.id}}</th>
+                        <th>{{serch.Name_view}}</th>
+                        <th>{{serch.сontract_time|date:"d.m.Y"}}</th>
+                        <th>{{serch.percentage_of_insurance_premium}}</th>
+                        <th><button onclick="window.location.href='edit_view.html/{{serch.id}}'">Изменить</button></th>
+                        <th><a  href="delete_dogovor2.html/{{serch.id}}"><button >Удалить</button></a>
+                    </tr>
+                {% endfor %}
+            </table>
+            <button onclick="window.location.href='add_view.html'">Добавить вид</button>
+            </div>
+        </div>
         <br>
-        <h2>Клиенты: </h2>
-         <table border="2" width="100%" cellpadding="5" rules="rows" >
+        <div class="block">
+        <h2 class="extremum-click">Клиенты: </h2>
+            <div class="extremum-slide">
+            <table border="2" width="100%" cellpadding="5" rules="rows" >
+                <tr >
+                    <th>Номер</th>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                    <th>Отчество</th>
+                    <th>Логин</th>
+                    <th>Пароль</th>
+                    <th>Данные_паспорта</th>
+                    <th>Данные_снилса</th>
+                    <th>Действие</th>
 
-            <tr >
-                <th>Номер</th>
-                <th>Имя</th>
-                <th>Фамилия</th>
-                <th>Отчество</th>
-                <th>Логин</th>
-                <th>Пароль</th>
-                <th>Данные_паспорта</th>
-                <th>Данные_снилса</th>
-                <th>Действие</th>
-
-           </tr>
-            {% for serch in users_list%}
-             {% for serchCustomer in customers_list%}
-              {% if  serch.id == serchCustomer.user_id %}
-            <tr>
-                <th>{{serchCustomer.id}}</th>
-                <th>{{serch.name}}</th>
-                <th>{{serch.surname}}</th>
-                <th>{{serch.patronymic}}</th>
-                <th>{{serch.login}}</th>
-                <th>{{serch.password}}</th>
-                <th>{{serchCustomer.passport_data}}</th>
-                <th>{{serchCustomer.snills}}</th>
-                <th><button onclick="window.location.href='edit_customer.html/{{serch.id}}'">Изменить</button></th>
-                <th><a  href="delete_dogovor4.html/{{serchCustomer.id}}"><button >Удалить</button></a>
-            </tr>
-             {% endif %}
-            {% endfor %}
-             {% endfor %}
-        </table>
+                </tr>
+                {% for serch in users_list%}
+                    {% for serchCustomer in customers_list%}
+                    {% if  serch.id == serchCustomer.user_id %}
+                    <tr>
+                        <th>{{serchCustomer.id}}</th>
+                        <th>{{serch.name}}</th>
+                        <th>{{serch.surname}}</th>
+                        <th>{{serch.patronymic}}</th>
+                        <th>{{serch.login}}</th>
+                        <th>{{serch.password}}</th>
+                        <th>{{serchCustomer.passport_data}}</th>
+                        <th>{{serchCustomer.snills}}</th>
+                        <th><button onclick="window.location.href='edit_customer.html/{{serch.id}}'">Изменить</button></th>
+                        <th><a  href="delete_dogovor4.html/{{serchCustomer.id}}"><button >Удалить</button></a>
+                        <!--<th><img src="{{serch.photo_profile}}" width="100" height="111" class="minimized"></th>-->
+                    </tr>
+                    {% endif %}
+                    {% endfor %}
+                {% endfor %}
+            </table>
+            </div>
+        </div>
         <br>
-         <h2>Работники: </h2>
-         <table border="2" width="100%" cellpadding="5" rules="rows" >
+        <div class="block">
+        <h2 class="extremum-click">Работники: </h2>
+            <div class="extremum-slide">
+                <table border="2" width="100%" cellpadding="5" rules="rows" >
 
             <tr >
                 <th>Номер</th>
@@ -114,26 +133,31 @@
                 <th>Действие</th>
 
            </tr>
-            {% for serch in users_list%}
-             {% for serchEmployeer in employeer_list%}
-              {% if  serch.id == serchEmployeer.user_id %}
-            <tr>
-                <th>{{serchEmployeer.id}}</th>
-                <th>{{serch.name}}</th>
-                <th>{{serch.surname}}</th>
-                <th>{{serch.patronymic}}</th>
-                <th>{{serch.login}}</th>
-                <th>{{serch.password}}</th>
-                <th>{{serchEmployeer.position}}</th>
-                <th><button onclick="window.location.href='edit_employeer.html/{{serch.id}}'">Изменить</button></th>
-                <th><a  href="delete_dogovor3.html/{{serchEmployeer.id}}"><button >Удалить</button></a>
-            </tr>
-             {% endif %}
-            {% endfor %}
-             {% endfor %}
-        </table>
+                {% for serch in users_list%}
+                    {% for serchEmployeer in employeer_list%}
+                    {% if  serch.id == serchEmployeer.user_id %}
+                        <tr>
+                            <th>{{serchEmployeer.id}}</th>
+                            <th>{{serch.name}}</th>
+                            <th>{{serch.surname}}</th>
+                            <th>{{serch.patronymic}}</th>
+                            <th>{{serch.login}}</th>
+                            <th>{{serch.password}}</th>
+                            <th>{{serchEmployeer.position}}</th>
+                            <th><button onclick="window.location.href='edit_employeer.html/{{serch.id}}'">Изменить</button></th>
+                            <th><a  href="delete_dogovor3.html/{{serchEmployeer.id}}"><button >Удалить</button></a>
+                        </tr>
+                    {% endif %}
+                    {% endfor %}
+                {% endfor %}
+                </table>
+            </div>
+        </div>
         <br>
-         <h2>Заявление на выплату: </h2>
+        <div class="block">
+        <h2 class="extremum-click">Заявление на выплату: </h2>
+            <div class="extremum-slide">
+
          <table border="2" width="100%" cellpadding="5" rules="rows" >
             <tr >
                 <th>Номер</th>
@@ -153,7 +177,13 @@
             </tr>
              {% endfor %}
         </table>
-        <h2>Выплата: </h2>
+        </div>
+        </div>
+        <br>
+        <div class="block">
+        <h2 class="extremum-click">Выплата: </h2>
+            <div class="extremum-slide">
+
          <table border="2" width="100%" cellpadding="5" rules="rows" >
             <tr >
                 <th>Номер</th>
@@ -170,7 +200,16 @@
             </tr>
              {% endfor %}
         </table>
+        </div>
+        </div>
+        <br>
     </div>
   </div>
 </div>
+
+<script>
+    $(".extremum-click").click(function () {
+      $(this).siblings(".extremum-slide").slideToggle("slow");
+    });
+</script>
   {% endblock %}

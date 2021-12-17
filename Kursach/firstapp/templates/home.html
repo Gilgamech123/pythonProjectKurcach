@@ -4,21 +4,29 @@
  <div class="container" >
   <div class="row">
     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 photoProfil">
-      <img  src="https://akbcenter.by/assets/images/default-avatar.png" width="200" height="222">
-    </div>
         {% for info in information %}
-            {% for task in tasks %}
-
-                    {% include 'string.html' %}
-
-            {% endfor %}
-
+            <img src="{{info.photo_profile}}" width="200" height="222" >
         {% endfor %}
+    </div>
+      {% for info in information %}
+            {% for task in tasks %}
+                {% include 'string.html' %}
+            {% endfor %}
+        {% endfor %}
+      <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <label >Фото профиля:</label>
+                <input type="file" name="photo_profile"  required>
+                <button type="submit" STYLE="margin-top:-35px; margin-left:350px;">Выполнить</button>
+            </form>
 
       <button onclick="window.location.href='dogovor.html'">Добавить договор</button>
+      <div class="block">
+            <h2 class="extremum-click">Все договора:</h2>
+            <div class="extremum-slide">
     <div class="documents">
      <table border="2" width="100%" cellpadding="5" rules="rows" id ="zen">
-         <tr >
+         <tr>
                 <th>Номер</th>
                 <th>Имя_Агента</th>
                 <th>Вид_страхования</th>
@@ -33,11 +41,16 @@
         {% endfor %}
 
         </table>
-
+            </div>
+        </div>
 
 
     </div>
   </div>
 </div>
-
+<script>
+    $(".extremum-click").click(function () {
+      $(this).siblings(".extremum-slide").slideToggle("slow");
+    });
+</script>
   {% endblock %}

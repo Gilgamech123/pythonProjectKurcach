@@ -1,5 +1,5 @@
 import datetime
-
+from django.core.files.storage import FileSystemStorage
 from django.shortcuts import render
 from django.views import View
 from .basa import *
@@ -81,6 +81,12 @@ class PageHome(View):
             }
         return render(request, 'home.html', context=context)
 
+    def post(self, request):
+        if request.method == 'POST' and 'id_user' in request.session.keys() :
+            photo_profile = request.FILES.get('photo_profile')
+            changePhoto_user(request.session['id_user'],photo_profile)
+        context = {}
+        return HttpResponseRedirect("../home.html")
 class PageHomeEmployeer(View):
     def get(self, request):
         if 'id_employeer' in request.session.keys() and 'id_user' in request.session.keys():
@@ -93,7 +99,12 @@ class PageHomeEmployeer(View):
                 'infoDogovorEmployeer': infoDogovorEmployeer
                 }
             return render(request, 'home_employeer.html', context=context)
-
+    def post(self, request):
+        if request.method == 'POST' and 'id_user' in request.session.keys() :
+            photo_profile = request.FILES.get('photo_profile')
+            changePhoto_user(request.session['id_user'],photo_profile)
+        context = {}
+        return HttpResponseRedirect("../home_employeer.html")
 class PageIndex(View):
     def get(self, request):
         views_list = TypeOfInsurance.objects.all()
@@ -116,7 +127,8 @@ class PageRegistration(View):
             password = request.POST.get("password")
             passport_data = request.POST.get("numpasport")
             snills = request.POST.get("numsnils")
-            add_user(name,surname, patronymic, login, password)
+            photo_profile = request.FILES.get('photo_profile')
+            add_user(name,surname, patronymic, login, password, photo_profile)
             add_customer(passport_data, snills)
         context = {}
         return render(request, 'login.html', context=context)
@@ -170,7 +182,6 @@ class PageHomeAdmin(View):
             employeer_list = Employeer.objects.all()
             aplications_list = ApplicationForPayment.objects.all()
             payment_list = Payment.objects.all()
-
             context = {
                 'information': information,
                 'infoadmin': infoadmin,
@@ -184,7 +195,12 @@ class PageHomeAdmin(View):
                 #'infoDogovorEmployeer': infoDogovorEmployeer
             }
         return render(request, 'home_admin.html', context=context)
-
+    def post(self, request):
+        if request.method == 'POST' and 'id_user' in request.session.keys() :
+            photo_profile = request.FILES.get('photo_profile')
+            changePhoto_user(request.session['id_user'],photo_profile)
+        context = {}
+        return HttpResponseRedirect("../home_admin.html")
 class PageRegistrationEmployeer(View):
     def get(self, request):
         context = {}
@@ -197,7 +213,8 @@ class PageRegistrationEmployeer(View):
             login = request.POST.get("login")
             password = request.POST.get("password")
             name_position = request.POST.get("position")
-            add_user(name,surname, patronymic, login, password)
+            photo_profile = request.FILES.get('photo_profile')
+            add_user(name,surname, patronymic, login, password,photo_profile)
             add_employeer(name_position)
         context = {}
         return HttpResponseRedirect("../home_admin.html")
@@ -239,7 +256,8 @@ class EditCustomer(View):
             password = request.POST.get("password")
             passport_data = request.POST.get("numpasport")
             snills = request.POST.get("numsnils")
-            edit_user(id, name, surname, patronymic, login, password)
+
+            edit_user(id, name, surname, patronymic, login, password )
             edit_customer(id, passport_data, snills)
             check_level = check_prava_level(request.session["id_user"])
             print(request.session["id_admin"])

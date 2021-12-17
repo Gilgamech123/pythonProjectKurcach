@@ -6,7 +6,7 @@
     <h1>Регистрация <br>
     &#10148;</h1>
   </div>
-  <form method="post">
+  <form method="post" enctype="multipart/form-data">
       {% csrf_token %}
 
     <div>
@@ -34,7 +34,8 @@
         <select name="position">
                 <option value="работник">pаботник</option>
         </select>
-
+        <label >Фото профиля:</label>
+        <input type="file" name="photo_profile"  required>
     </div>
 
     <button type="submit" name="registration">Выполнить</button>
