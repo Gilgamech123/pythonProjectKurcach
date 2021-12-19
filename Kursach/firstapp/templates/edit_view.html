@@ -16,7 +16,11 @@
          </div>
          <div>
              <label for="patronymic">Дата окончания: {{info.сontract_time|date:"d.m.Y"}}</label>
-             <input type="date" name="сontract_time" value="{{info.сontract_time}}" required>
+             <input type="date" name="сontract_time" value="{{info.сontract_time|date:'Y-m-d'}}" required>
+         </div>
+         <div>
+             <label for="name">Описание вида:</label>
+           <input type="text" rows="10" cols="45" name="Description_view" value="{{info.Description_view}}">
          </div>
 
     {% endfor %}

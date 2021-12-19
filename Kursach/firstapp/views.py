@@ -233,7 +233,8 @@ class EditViewPage(View):
             nameView = request.POST.get("nameView")
             percentage_of_insurance_premium = request.POST.get("percentage_of_insurance_premium")
             сontract_time = request.POST.get("сontract_time")
-            edit_view(id, nameView,percentage_of_insurance_premium, сontract_time)
+            desctiption = request.POST.get("Description_view")
+            edit_view(id, nameView,percentage_of_insurance_premium, сontract_time,desctiption )
         context = {}
         return HttpResponseRedirect("../home_admin.html")
 
@@ -302,7 +303,8 @@ class AddView(View):
             nameView = request.POST.get("nameView")
             percentage_of_insurance_premium = request.POST.get("percentage_of_insurance_premium")
             сontract_time = request.POST.get("сontract_time")
-            add_view(сontract_time, nameView, percentage_of_insurance_premium)
+            desctiption = request.POST.get("Description_view")
+            add_view(сontract_time, nameView, percentage_of_insurance_premium,desctiption )
         context = {}
         return HttpResponseRedirect("../home_admin.html")
 

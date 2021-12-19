@@ -61,6 +61,7 @@
                     <th>Наименование</th>
                     <th>Дата_Окончание</th>
                     <th>Страховой_Взнос</th>
+                    <th>Описание</th>
 
                 </tr>
                 {% for serch in views_list%}
@@ -69,6 +70,7 @@
                         <th>{{serch.Name_view}}</th>
                         <th>{{serch.сontract_time|date:"d.m.Y"}}</th>
                         <th>{{serch.percentage_of_insurance_premium}}</th>
+                        <th>{{serch.Description_view}} </th>
                         <th><button onclick="window.location.href='edit_view.html/{{serch.id}}'">Изменить</button></th>
                         <th><a  href="delete_dogovor2.html/{{serch.id}}"><button >Удалить</button></a>
                     </tr>

@@ -34,6 +34,7 @@ class Admin(models.Model):
 class TypeOfInsurance(models.Model):
     сontract_time = models.DateTimeField()
     Name_view = models.CharField(max_length=150)
+    Description_view = models.TextField(blank=True)
     percentage_of_insurance_premium = models.DecimalField(max_digits=20, decimal_places=2)
 
     def __str__(self):

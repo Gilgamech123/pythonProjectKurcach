@@ -1,65 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="895726e4-30e9-493b-ac8f-4046b988d401" name="Changes" comment="EndProjectWeb">
-      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/migrations/0011_user_photo_profile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/migrations/0012_alter_user_photo_profile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/migrations/0013_alter_user_photo_profile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos/2021/12/14/3KFfSevZy9E.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos/2021/12/14/3KFfSevZy9E_DFdzDGy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos/2021/12/14/Главное_меню.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos/2021/12/14/Главное_меню_nBCcQUL.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos/2021/12/14/Главное_меню_wOmyi35.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos/2021/12/14/скан_для_Попова_001.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/13/3KFfSevZy9E.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/13/3KFfSevZy9E_AfxTq3S.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/13/6473f1c36c2a2f3addd5ea7b218b41d7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/13/6473f1c36c2a2f3addd5ea7b218b41d7_4YFKr0f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/13/6473f1c36c2a2f3addd5ea7b218b41d7_S5Ymm3m.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/13/6473f1c36c2a2f3addd5ea7b218b41d7_cVb2Co0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/13/6473f1c36c2a2f3addd5ea7b218b41d7_r7a39jI.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/13/WhatsApp_Image_2021-11-29_at_18.30.42.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/13/WhatsApp_Image_2021-11-29_at_18.30.42_nugQX2s.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/13/Главное_меню.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/3KFfSevZy9E.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/3KFfSevZy9E_1gAgwXl.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/3KFfSevZy9E_DYZ5OPi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/3KFfSevZy9E_MYZENqU.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/3KFfSevZy9E_T7Aycqh.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/3KFfSevZy9E_TzE5iCM.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/3KFfSevZy9E_gaX8zwC.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/6473f1c36c2a2f3addd5ea7b218b41d7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/6473f1c36c2a2f3addd5ea7b218b41d7_2Mmt7pt.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/6473f1c36c2a2f3addd5ea7b218b41d7_CA9pGoS.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/6473f1c36c2a2f3addd5ea7b218b41d7_FND14xc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/6473f1c36c2a2f3addd5ea7b218b41d7_K0XapDu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/6473f1c36c2a2f3addd5ea7b218b41d7_WiLFgGF.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/6473f1c36c2a2f3addd5ea7b218b41d7_bNJIuLB.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/6473f1c36c2a2f3addd5ea7b218b41d7_neyXlgB.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/6473f1c36c2a2f3addd5ea7b218b41d7_vzQdiwB.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/Главное_меню.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/Главное_меню_8HpiTZ0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/Главное_меню_M97I0Wx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/Главное_меню_kAlKuIj.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/Главное_меню_vv8uQAu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/Заказ.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/изображение_2021-12-14_183354.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kursach/photos_profile/2021/12/14/импорт.pdf" afterDir="false" />
+    <list default="true" id="895726e4-30e9-493b-ac8f-4046b988d401" name="Changes" comment="EndProjectWeb123">
+      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/migrations/0014_typeofinsurance_description_view.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/Kursach/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/Kursach/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kursach/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kursach/firstapp/basa.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/basa.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kursach/firstapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/edit_customer.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/edit_customer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/static/CSS/registration.css" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/static/CSS/registration.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/add_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/add_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/edit_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/edit_view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/home_admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/home_admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/home_employeer.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/home_employeer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/registration_employeer.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/registration_employeer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/string.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/string.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/table.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/table.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kursach/firstapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639235418981</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="EndProjectWeb123">
+      <created>1639751988456</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1639751988456</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -167,7 +126,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="EndProject" />
     <MESSAGE value="EndProjectWeb" />
-    <option name="LAST_COMMIT_MESSAGE" value="EndProjectWeb" />
+    <MESSAGE value="EndProjectWeb123" />
+    <option name="LAST_COMMIT_MESSAGE" value="EndProjectWeb123" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

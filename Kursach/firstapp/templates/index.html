@@ -149,19 +149,30 @@ height: 500px;
 </div>
 </div>
 <h1><font size="15px">Виды страхования:</font></h1>
-<div class="Wies">
 
-      <ol class="not"  type="square">
-         {% for serch in views_list%}
-        <li><font color="white" size="6px"> страхование от {{serch.Name_view}}</font></li>
-        <br>
-        {% endfor %}
-      </ol>
+<div class="row">
+{% for serch in views_list%}
+<div class="card mb-3" style="max-width: 540px; margin-left: 70px">
+  <div class="row g-0">
+
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{serch.Name_view}}</h5>
+        <p class="card-text">{{serch.Description_view}}</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+  {% endfor %}
+  </div>
+
+
 
 </div>
 <style>
 .Wies{
-padding-left: 35%;
+padding-left: 5%;
 padding-top: 3%;
 padding-bottom: 3%;
 background-color: #738290;
@@ -169,6 +180,7 @@ background-color: #738290;
 }
 li{
 list-style-type: none;
+display: inline;
 }
 .container{
 padding-top: 3%;

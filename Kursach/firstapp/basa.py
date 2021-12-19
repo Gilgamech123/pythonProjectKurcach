@@ -121,19 +121,20 @@ def add_aplication(dogovor, doctor_opinion,customer_request):
     add_Aplication = ApplicationForPayment(dogovor = info[0], doctor_opinion = doctor_opinion, customer_request = customer_request)
     add_Aplication.save()
 
-def add_view(сontract_time, nameView, percentage_of_insurance_premium):
-    add_View = TypeOfInsurance(сontract_time = сontract_time, Name_view = nameView, percentage_of_insurance_premium = percentage_of_insurance_premium )
+def add_view(сontract_time, nameView, percentage_of_insurance_premium,desctiption ):
+    add_View = TypeOfInsurance(сontract_time = сontract_time, Name_view = nameView, percentage_of_insurance_premium = percentage_of_insurance_premium, Description_view=desctiption  )
     add_View.save()
 
 def get_info_view(id):
     rez= TypeOfInsurance.objects.filter(id = id)
     return rez
 
-def edit_view(id, nameView,percentage_of_insurance_premium, сontract_time):
+def edit_view(id, nameView,percentage_of_insurance_premium, сontract_time,desctiption):
     edit_view = TypeOfInsurance.objects.get(id = id)
     edit_view.сontract_time = сontract_time
     edit_view.Name_view = nameView
     edit_view.percentage_of_insurance_premium = percentage_of_insurance_premium
+    edit_view.Description_view = desctiption
     edit_view.save()
 
 def get_info_user(id):
