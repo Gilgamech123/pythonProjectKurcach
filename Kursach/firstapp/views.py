@@ -363,3 +363,5 @@ class DeleteDogovor6(View):
         delete = Payment.objects.get(id=id)
         delete.delete()
         return HttpResponseRedirect("../home_admin.html")
+
+

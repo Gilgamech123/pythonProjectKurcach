@@ -3,6 +3,14 @@
   background: #ffd500;
   border-radius: 20px;
   margin-left:40%;
+  height: 810px;
+}
+.form-wrap1 {
+  width: 550px;
+  background: #ffd500;
+  border-radius: 20px;
+  margin-left:40%;
+  height: 335px;
 }
 .form-wrap *{transition: .1s linear}
 .profile {
@@ -14,10 +22,11 @@
 form {
   background: white;
   float: left;
-  width: calc(100% - 240px);
+  width: calc(97% - 240px);
   padding: 30px;
   border-radius: 0 20px 20px 0;
   color: #7b7b7b;
+
 }
 .form-wrap:after, form div:after {
   content: "";

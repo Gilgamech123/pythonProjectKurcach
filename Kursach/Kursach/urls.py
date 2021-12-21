@@ -29,6 +29,7 @@ urlpatterns = [
     path('delete_dogovor4.html/<int:id>', DeleteDogovor4.as_view()),
     path('delete_dogovor5.html/<int:id>', DeleteDogovor5.as_view()),
     path('delete_dogovor6.html/<int:id>', DeleteDogovor6.as_view()),
+
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

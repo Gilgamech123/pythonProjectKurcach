@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="895726e4-30e9-493b-ac8f-4046b988d401" name="Changes" comment="EndProjectWeb123">
-      <change afterPath="$PROJECT_DIR$/Kursach/firstapp/migrations/0014_typeofinsurance_description_view.py" afterDir="false" />
+    <list default="true" id="895726e4-30e9-493b-ac8f-4046b988d401" name="Changes" comment="EndProjectWeb123222">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kursach/Kursach/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/Kursach/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kursach/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/basa.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/basa.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kursach/firstapp/static/CSS/registration.css" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/static/CSS/registration.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/add_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/add_view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/edit_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/edit_view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/home_admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/home_admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kursach/firstapp/templates/table.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/templates/table.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kursach/firstapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kursach/firstapp/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639751988456</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="EndProjectWeb123222">
+      <created>1639925810326</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1639925810327</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,7 +131,8 @@
     <MESSAGE value="EndProject" />
     <MESSAGE value="EndProjectWeb" />
     <MESSAGE value="EndProjectWeb123" />
-    <option name="LAST_COMMIT_MESSAGE" value="EndProjectWeb123" />
+    <MESSAGE value="EndProjectWeb123222" />
+    <option name="LAST_COMMIT_MESSAGE" value="EndProjectWeb123222" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
